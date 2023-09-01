@@ -13,15 +13,20 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("login")
+    @GetMapping("/login-slash")
     public String getLogin() {
         return "/user/login";
     }
 
-    @PostMapping("login")
+    @PostMapping("/login")
     public String postLogin(UserVo userVo) {
         userService.login(userVo);
         return "/user/loginSucces";
+    }
+
+    @GetMapping("/login")
+    public String getLogin1() {
+        return "user/login";
     }
 
 }
