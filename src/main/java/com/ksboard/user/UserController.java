@@ -13,9 +13,9 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/login-slash")
-    public String getLogin() {
-        return "/user/login";
+    @GetMapping("/login")
+    public String getLogin1() {
+        return "user/login";
     }
 
     @PostMapping("/login")
@@ -24,9 +24,5 @@ public class UserController {
         return "/user/loginSucces";
     }
 
-    @GetMapping("/login")
-    public String getLogin1() {
-        return "user/login";
-    }
 
 }
