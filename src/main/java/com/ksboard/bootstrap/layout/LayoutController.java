@@ -10,12 +10,12 @@ public class LayoutController {
 
     @GetMapping("/breakpoints")
     public String Layout() {
-        return "/bootstrap/layout/breakpoints";
+        return "bootstrap/layout/breakpoints";
     }
 
     @GetMapping("/containers")
     public String Containers() {
-        return "/bootstrap/layout/containers";
+        return "bootstrap/layout/containers";
     }
 
 }
